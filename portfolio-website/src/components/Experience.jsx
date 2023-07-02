@@ -8,6 +8,8 @@ import javascriptImage from "../assets/javascript.png";
 import nodeImage from "../assets/node.png";
 import reactImage from "../assets/react.png";
 import tailwindImage from "../assets/tailwind.png";
+import expressIcon from "../assets/express-js-icon.png"
+import mongodbIcon from "../assets/mongodb-icon.png"
 
 
 const Experience = () => {
@@ -26,9 +28,9 @@ const Experience = () => {
         },
         {
             id: 3,
-            src: githubImage,
-            title: "Github",
-            style: " shadow-gray-500"
+            src: javascriptImage,
+            title: "JavaScript",
+            style: " shadow-yellow-500"
         },
         {
             id: 4,
@@ -38,9 +40,9 @@ const Experience = () => {
         },
         {
             id: 5,
-            src: javascriptImage,
-            title: "JavaScript",
-            style: " shadow-yellow-500"
+            src: githubImage,
+            title: "Github",
+            style: " shadow-gray-500"
         },
         {
             id: 6,
@@ -53,6 +55,18 @@ const Experience = () => {
             src: nodeImage,
             title: "NodeJS",
             style: " shadow-lime-500"
+        },
+        {
+            id: 8,
+            src: expressIcon,
+            title: "Express",
+            style: " shadow-gray-400"
+        },
+        {
+            id: 9,
+            src: mongodbIcon,
+            title: "MongoDB",
+            style: " shadow-green-500"
         },
     ]
 
@@ -68,7 +82,7 @@ const Experience = () => {
             <div className='w-full grid grid-cols-2 sm:grid-cols-3 gap-8 text-center py-8 px-12 sm:px-0'>
                 {technologies.map(({id, src, title, style})=>(
                     <div className={`shadow-md hover:scale-105 duration-500 py-2 rounded-lg ${style}`}>
-                        <img src={src} alt={title} className='w-20 mx-auto'></img>
+                        <img src={src} alt={title} className="w-20 mx-auto "></img>
                         <p className='mt-4'>{title}</p>
                     </div>
                 ))}
