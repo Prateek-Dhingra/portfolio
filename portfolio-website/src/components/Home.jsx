@@ -5,8 +5,8 @@ import { Link } from 'react-scroll'
 
 const Home = () => {
   return (
-    <div name="home" className=' h-max w-full bg-gradient-to-b from-black via-black to-gray-800'>
-        <div className='h-20 w-full'></div>
+    <div name="home" className=' h-max md:h-screen w-full bg-gradient-to-b from-black via-black to-gray-800 pb-10 md:pb-0'>
+        <div className='h-20 md:h-5 w-full'></div>
       <div className='max-w-screen-lg mx-auto flex flex-col items-center justify-center h-full px-4 md:flex-row'>
         <div className='flex flex-col justify-center h-full'>
           <h2 className='text-4xl sm:text-7xl font-bold text-white'> I'm a Full Stack Developer</h2>
@@ -24,7 +24,7 @@ const Home = () => {
           </div>
 
         </div>
-        <div>
+        <div className='pt-5'>
           <img src={HeroImage} alt="my profile" className='rounded-2xl mx-auto w-2/3 md:w-full'></img>
         </div>
       </div>
