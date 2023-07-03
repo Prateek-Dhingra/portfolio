@@ -60,7 +60,7 @@ const Experience = () => {
             id: 8,
             src: expressIcon,
             title: "Express",
-            style: " shadow-gray-400"
+            style: " shadow-gray-400 bg-slate-500"
         },
         {
             id: 9,
