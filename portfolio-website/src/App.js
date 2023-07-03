@@ -11,6 +11,7 @@ function App() {
     <div>
       {/* <h1 className="text-4xl font-bold font-signature">Hello</h1> */}
       <Navbar/>
+      <div className="h-20"></div>
 
       <Home/>
       <About/>
