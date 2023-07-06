@@ -1,7 +1,7 @@
 {
   "files": {
     "main.css": "/portfolio-copy/static/css/main.566ebe92.css",
-    "main.js": "/portfolio-copy/static/js/main.6ff25ff8.js",
+    "main.js": "/portfolio-copy/static/js/main.904deedf.js",
     "static/media/cpp-icon.png": "/portfolio-copy/static/media/cpp-icon.666af1b3598c92045b63.png",
     "static/media/python-icon.png": "/portfolio-copy/static/media/python-icon.d8b377f05522bf35de36.png",
     "static/media/telescopeGuidanceBackend.png": "/portfolio-copy/static/media/telescopeGuidanceBackend.aa3c9dd45d87dc609405.png",
@@ -17,10 +17,10 @@
     "static/media/javascript.png": "/portfolio-copy/static/media/javascript.1ccd6ef9bb1f9c84ef00.png",
     "index.html": "/portfolio-copy/index.html",
     "main.566ebe92.css.map": "/portfolio-copy/static/css/main.566ebe92.css.map",
-    "main.6ff25ff8.js.map": "/portfolio-copy/static/js/main.6ff25ff8.js.map"
+    "main.904deedf.js.map": "/portfolio-copy/static/js/main.904deedf.js.map"
   },
   "entrypoints": [
     "static/css/main.566ebe92.css",
-    "static/js/main.6ff25ff8.js"
+    "static/js/main.904deedf.js"
   ]
 }
