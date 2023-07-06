@@ -1,36 +1,22 @@
 import React from 'react'
-import arrayDestruct from "../assets/portfolio/arrayDestruct.jpg";
-import installNode from "../assets/portfolio/installNode.jpg";
-import navbar from "../assets/portfolio/navbar.jpg";
-import reactParallax from "../assets/portfolio/reactParallax.jpg";
-import reactSmooth from "../assets/portfolio/reactSmooth.jpg";
-import reactWeather from '../assets/portfolio/reactWeather.jpg'
+import telescopeGuidanceApp from '../assets/portfolio/telescopeGuidanceApp.png';
+import telescopeGuidanceBackend from '../assets/portfolio/telescopeGuidanceBackend.png';
 
 const Portfolio = () => {
     const projects = [
         {
             id: 1,
-            src: arrayDestruct
+            src: telescopeGuidanceApp,
+            title: "Telescope Guidance App",
+            demoLink: "https://64a5611a02a596081c20785c--stirring-rolypoly-5cb4b4.netlify.app/",
+            codeLink: ""
         },
         {
             id: 2,
-            src: installNode
-        },
-        {
-            id: 3,
-            src: navbar
-        },
-        {
-            id: 4,
-            src: reactParallax
-        },
-        {
-            id: 5,
-            src: reactSmooth
-        },
-        {
-            id: 6,
-            src: reactWeather
+            src: telescopeGuidanceBackend,
+            title: "Telescope Data Storage and Authentication Backend API",
+            demoLink: "https://telescopeguidanceappbackend.onrender.com?messageText=deploySuccessful",
+            codeLink: "https://github.com/Prateek-Dhingra/TelescopeGuidanceApp"
         },
     ]
 
@@ -44,12 +30,17 @@ const Portfolio = () => {
 
             {/* structure of a card*/}
             <div className='grid sm:grid-cols-2 md:grid-cols-3 gap-8 px-12 sm:px-0'> 
-            {projects.map( ({id, src}) => (
+            {projects.map( ({id, src, title, demoLink, codeLink}) => (
                 <div key={id} className='shadow-md shadow-gray-600 rounded-lg '>
                     <img src={src} alt="" className='rounded-md duration-200 hover:scale-105'/>
-                    <div className='flex items-center justify-center'>
-                        <button className='w-1/2 px-6 py-3 m-4 duration-200 hover:scale-105'>Demo</button>
-                        <button className='w-1/2 px-6 py-3 m-4 duration-200 hover:scale-105'>Code</button>
+                    <div className=' items-center justify-center w-full px-6 pt-4 m-auto duration-200 hover:scale-105 text-center '>{title}</div>
+                    <div className='flex items-center justify-center px-4 py-2'>
+                        <button className='w-1/2 m-4 duration-200 hover:scale-105'>
+                            <a href={demoLink} target='_blank' rel="noreferrer" className='w-full text-center'>Demo</a>
+                        </button>
+                        <button className='w-1/2 m-4 duration-200 hover:scale-105'>
+                            <a href={codeLink} target='_blank' rel="noreferrer" className='w-full text-center'>Code</a>
+                        </button>
                     </div>
                 </div>)
             )}
